@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/367ca1bdac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Sathwik</span><br>From MREC.</h1>
+            </div>
+        </div>
+    </div>
+<!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><p>I'm Sathwik Ram Gangapuram, and I am a passionate student with a keen interest in the world of technology. I possess strong coding skills and excel in logical thinking, both of which I have honed through dedicated effort and enthusiasm. One of my notable achievements includes active participation in hackathons, where I have had the opportunity to apply my coding expertise to real-world challenges.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Familiar With Python And GUI Modules.</li>
+                            <li><span>Web Development</span><br>Can Code HTML And CSS.</li>
+                            <li><span>DBMS</span><br>Familiar With MySQL Database Query Language.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience"> 
+                        <ul>
+                            <li><span>Python</span><br>Developed GUI Interface For An Hospital App Project.</li>
+                            <li><span>Web Development</span><br>Creating Own Portfolio.</li>
+                            <li><span>DBMS</span><br>Created A Database For Hospital Data.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Currently Pursuing B.Tech In MREC With Current CGPA Of 8.86.</li>
+                            <li><span>Intermediate</span><br>Studied At Sri Chaitanya Jr. College, With Percentage Of 98.3%.</li>
+                            <li><span>SSC</span><br>Studied At Sri Chaitanya School, With An CGPAOf 10.0.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>GUI Development</h2>
+                <p>Can Develop Python GUI Interfaces For Your Projects.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Can Develop Develop Basic Web Applications.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DBMS</h2>
+                <p>Can Create And Manipulate Databases In Query Languages Like MySQL.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Hospital App</h3>
+                    <p>The App That Enables User To Get Multiple Facilities Under Single Shelter.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>PortFolio Site</h3>
+                    <p>The Site Enables To Users To Set Their Data In Their Own Portfolio Website.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Hospital Database</h3>
+                    <p>Can Store Your Data In The Database Tables By Sorting The Data You Have Entered.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+</div>
+
+<!--Contact-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sathwikgangapuram707@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> +918008822499</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/me_sathwik?igshid=MzMyNGUyNmU2YQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sathwik-gangapuram-346092275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/+918008822499"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <a href="Images/resume.docx" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Sumbit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i>. Sathwik Ram Gangapuram.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
